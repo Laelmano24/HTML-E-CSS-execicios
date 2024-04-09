@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seletores aula.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      @charset "UTF-8";
+  @import url('https://fonts.googleapis.com/css2?family=Candal&family=Encode+Sans+SC:wght@100..900&family=Galindo&family=Telex&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Candal&family=Encode+Sans+SC:wght@100..900&family=Galindo&family=Telex&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Candal&family=Encode+Sans+SC:wght@100..900&family=Galindo&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Telex&display=swap');
+  
+    body {
+      background-color: #CEFDFF;
+      font-size: 2em;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    h1#principal {
+      text-align: center;
+      font-style: italic;
+      color: #1AF0F8;
+      text-shadow: 3px 3px 3px #1CA6AB;
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 37px;
+      color: #469BB0;
+      font-style: italic
+    }
+    h3 {
+      font-size: 33px;
+      color: #347A8C;
+      font-style: italic;
+    }
+    h4 {
+      font-size: 33px;
+      color: #1D7085;
+      font-style: italic;
+    }
+    .DestacarCodigo1 {
+      color: #1FA524;
+      font-family: "Source Code Pro", monospace;
+      font-size: 32px;
+    }
+    .DestacarCodigo2 {
+      color: #A51F1F;
+      font-family: "Source Code Pro", monospace;
+      font-size: 32px;
+    }
+    p {
+      text-align: justify;
+      color:#34B7BC;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="principal">Aula de seletores.</h1>
+  <p>Olá, hoje vamos aprender seletores. Seletores é quando quer modificar duas tags de titulo, paragrafo ou qualquer que ele permita.</p>
+  <h2>Seletor: "<span class="DestacarCodigo1">id</span>"</h2>
+  <p>Caso você quer trocar a cor de um h1, no caso ter duas cores de h1 e não saber.<br>Precisamos usar o seletor "<span class="DestacarCodigo1">id</span>" nos nossos codigos.</p>
+  <h3>Exemplo:</h3>
+  <h4><span class="DestacarCodigo2">&lt;h1 <span class="DestacarCodigo1">id="Principal"</span>&gt;</span>Testes<span class="DestacarCodigo2">&lt;/h1&gt;</span></h4>
+  <p>Dentro do seletor escrevi "<span class="DestacarCodigo1">Principal</span>" só como exemplo, você pode modificar do seu jeito.</p>
+  <p>Na hora de usar css, que é lá que você vai modficar, nós usamos "<span class="DestacarCodigo1">#</span>"</p>
+  <h3>Exemplo</h3>
+  <h4>HTML<br><br><span class="DestacarCodigo2">&lt;h1 <span class="DestacarCodigo1">id="Principal"</span>&gt;</span>Testes<span class="DestacarCodigo2">&lt;/h1&gt;</span><br><br>CSS <span class="DestacarCodigo2"><br>#Principal {<br><br><span>color: blue;</span><br><br>}</h4>
+   <p>Bem simples de aprender, caso não entendeu consulte o video abaixo</p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/TZuVpJmSNSE?si=VEJfjabQ_0ny_aYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <h2>A diferença entre o "<span class="DestacarCodigo1">id</span>" e a "<span class="DestacarCodigo1">class</span>"</h2>
+   <p>Tem uma regra mecionada no w3c que você não pode usar dois "<span class="DestacarCodigo1">#</span>", até tem como fazer, mas não é recomendado.</p>
+   <p>O recomendado é utilizar as "<span class="DestacarCodigo1">class</span>".</p>
+   <h3>Exemplo</h3>
+   <h4><span class="DestacarCodigo2">&lt;h1 <span class="DestacarCodigo1">class="Destacar"</span>&gt;</span>Capitulo<span class="DestacarCodigo2">&lt;/h1&gt;</span></h4>
+   <p>E no css você colocar um ponto, "Como assim?". Você vai ver.</p>
+   <h3>Exemplo</h3>
+   <h4>HTML<br><br><span class="DestacarCodigo2">&lt;h1 <span class="DestacarCodigo1">class="Destacar"</span>&gt;</span>Capitulo<span class="DestacarCodigo2">&lt;/h1&gt;</span><br><br>CSS<br><br><span class="DestacarCodigo2">.Destacar {<br><br>color: yellow;<br><br>}</span></h4>
+   <p>É só por hoje, pessoal. Bom estudos.</p>
+</body>
+</html>

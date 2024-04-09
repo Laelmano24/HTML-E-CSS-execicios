@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+  background-color: #2B2B2B;
+  font: italic bold 18px arial, helvetica, sans-serif;
+}
+h1 {
+  color: white;
+  
+}
+h2 {
+  color: white;
+}
+hr {
+  color: #292929;
+}
