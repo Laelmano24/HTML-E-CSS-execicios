@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posicionamento da imagem</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Candal&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Encode+Sans+SC:wght@100..900&family=Galada&family=Galindo&family=Inter:wght@100..900&family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1+Code:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Palanquin+Dark:wght@400;500;600;700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Telex&display=swap');
+  
+  
+    * {
+      margin: 0px;
+    }
+    body {
+      height: 100vh;
+      background-color: #9700FF;
+      background-image: url('image/background.jpeg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1, h2, p {
+      margin: 15px 0px;
+    }
+    header {
+      background-color: white;
+      margin: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      max-width: 800px;
+      min-width: 300px;
+      padding: 10px 20px;
+    }
+    header > h1 {
+      color: #026CE5;
+      font-family: "Kanit", Arial, Helvetica, sans-serif;
+    }
+    nav {
+      background-color: white;
+      max-width: 800px;
+      min-width: 300px;
+      margin: auto;
+      padding: 20px;
+    }
+    nav > a {
+      color: #014694;
+      font-size: 20px;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav > a:hover {
+      text-decoration: underline;
+      color: #012247;
+    }
+    main {
+      background-color: #F4F4F4;
+      padding: 20px;
+      margin: auto;
+      max-width: 800px;
+      min-width: 300px;
+    }
+    main > h1 {
+      color: #0155B8;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bolder;
+    }
+    main > h2 {
+      color: #014694;
+      font-size: 18px;
+      text-align: left;
+    }
+    main > p {
+      color: #014694;
+      font-size: 18px;
+      text-align: justify;
+      font-weight: 550;
+    }
+    main > ul {
+      margin: 15px 0px;
+      color: #026CE5;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #005FCC;
+      padding: 20px;
+      max-width: 800px;
+      min-width: 300px;
+      margin: auto;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    footer > p {
+      color: white;
+      font-weight: bolder;
+      text-align: center;
+      margin: 0px;
+    }
+    footer > p > a {
+      color: white;
+      text-decoration: none;
+    }
+    footer > p > a:hover{
+      color: #012247;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Testhub</h1>
+  </header>
+  <nav>
+    <a href="#">menu</a>
+    <a href="https://israel-eduardo.vercel.app/" target="_blank">contato</a>
+  </nav>
+  <main>
+    <h1>Test de background image</h1>
+    <h2>Adicionei várias elementos no background</h2>
+    <ul>
+      <li>Background-position</li>
+      <li>Background-size</li>
+      <li>Background-attachment</li>
+      <li>Background-repeat</li>
+    </ul>
+    <p>Isso tudo foi fruto dos ensinamentos do incrível Gustavo Guanabara, o professor mais da top da internet.</p>
+  </main>
+  <footer>
+    <p>Feito por <a href="https://israel-eduardo.vercel.app/" target="_blank">Israel Eduardo</a></p>
+  </footer>
+</body>
+</html>
