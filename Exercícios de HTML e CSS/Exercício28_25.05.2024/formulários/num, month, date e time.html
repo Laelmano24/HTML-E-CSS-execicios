@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inputs number, month e time</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #EBD415, #EB9F15);
+      height: 100vh;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 10px 10px 10px #97660DBD;
+    }
+    .container > h1 {
+      font-size: 26px;
+    }
+    input {
+      display: block;
+      margin: 15px 0px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Notas da prova</h1>
+    <form action="index.php">
+      <label for="imedia">Média:</label>
+      <input type="number" name="media" id="imedia" max="10" step="0.1" required>
+      <label for="idatadaprova">Data da prova:</label>
+      <input type="date" name="datadaprova" id="idatadaprova">
+      <label for="ihoradaprova">Hora da prova:</label>
+      <input type="time" name="horadaprova" id="ihoradaprova">
+      <label for="imesdaprova">Mês da prova</label>
+      <input type="month" name="mesdaprova" id="imesdaprova">
+      <input type="submit" value="click">
+    </form>
+  </main>
+</body>
+</html>

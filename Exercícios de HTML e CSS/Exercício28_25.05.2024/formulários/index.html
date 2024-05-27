@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, #35FF6D, #3E35FF);
+  }
+  main {
+    background-color: white;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #isobrenome, #iname {
+    background-color: #E3E3E3;
+    padding: 2px;
+    border: none;
+    width: 200px;
+  }
+  #button {
+    background-color: #35FF6D;
+    padding: 10px 10px;
+    border-radius: 3px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    
+    
+  }
+  #button:hover {
+    background-color: #25B14C;
+    transition: background-color 0.5s;
+    
+  }
+</style>
+<body>
+  <main>
+    <form action="" >
+      <p>
+        <label for="iname">Nome:</label>
+        <input type="text" name="name" id="iname"/>
+      </p>
+      <p>
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome"/>
+      </p>
+      <input type="button" value="acessar" id="button">
+    </form>
+  </main>
+</body>  
+</html>
