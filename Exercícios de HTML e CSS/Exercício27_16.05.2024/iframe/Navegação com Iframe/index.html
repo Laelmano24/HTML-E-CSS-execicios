@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navegação com iframe</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #5EC8AC;
+    }
+    main {
+      background-color: white;
+      margin: 0px auto;
+      max-width: 800px;
+      min-width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    main > p {
+      font-weight: 500;
+    }
+    iframe {
+      display: block;
+      margin: 0px auto;
+      border: 2px solid black;
+      border-radius: 10px;
+      height: 100vh;
+      width: 100%;
+    }
+    main > h4 > a {
+      color: #6BE0C1;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: bolder;
+    }
+    main > h4 > a:hover {
+      color: #4B9C86;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Vamos navegação com Iframe</h1>
+    <p>Opa, vamos fazer uma nevagação de pagina utilizando Iframe.</p>
+    <hr>
+    <h2>Pagina do satoro:</h2>
+    <p>Um site basico do satoro gojo</p>
+    <h4><a href="satoro.html" target="iframe">Mostrar</a></h4>
+    <h2>Pagina do sukuna:</h2>
+    <p>Um site basico do sukuna</p>
+    <h4><a href="sukuna.html" target="iframe">Mostrar</a></h4>
+    <div class="iframe-container">
+      <iframe src="" frameborder="0" name="iframe"></iframe>
+    </div>
+  </main>
+</body>
+</html>
