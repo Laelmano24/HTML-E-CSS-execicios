@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sportex formulário</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #F49725, #B06D1A);
+    }
+    main {
+      background-color: white;
+      width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      color: #FC9C26;
+      font-weight: bolder;
+      margin: 10px 0px;
+      text-align: center;
+    }
+    input {
+      display: block;
+      background: linear-gradient(120deg, #D2821F, #F49725);
+      border-radius: 2px;
+      margin: 5px auto;
+     
+    }
+    picture > img {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+    .button {
+      display: flex;
+      margin: 30px 0px;
+      gap: 0px 20px;
+    }
+    .button > input {
+      background: #FC9C26;
+      border: none;
+      color: white;
+      font-weight: bolder;
+      width: 40%;
+      padding: 10px 10px;
+      border-radius: 3px;
+      transition: 0.5s;
+    }
+    .button > input:hover {
+      background-color: #D68624;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <picture>
+      <img src="sportex image/sportex logo.jpg" alt="sportex logo">
+    </picture>
+    <form action="index.php">
+      <label for="iusu">Nome</label>
+      <input type="text" name="usu" id="iusu" maxlength="15" minlength="0"  size="15" required>
+      
+      <label for="iemail">E-mail</label>
+      <input type="email" name="email" id="iemail" size="15" required>
+      
+      <label for="isenha">Senha</label>
+      <input type="password" name="senha" id="isenha" minlength="8" maxlength="15" size="15" required>
+      
+      
+      <div class="button">
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Limpar">
+      </div>
+    </form>
+  </main>
+</body>
+</html>

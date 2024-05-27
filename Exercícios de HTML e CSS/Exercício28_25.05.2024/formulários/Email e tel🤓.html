@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Input de email e telefone</title>
+  <style>
+
+    body {
+      height: 100vh;
+      margin: 0;
+      flex-direction: column-reverse;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #4497C0, #7544C0);
+    }
+    main {
+      background-color: #EAEAEA;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    fieldset {
+      background-color: #7544C099;
+      border: 2px solid black;
+    }
+    legend {
+      color: Black;
+      font-weight: bolder;
+    }
+    input {
+      display: block;
+    }
+    .button {
+      display: flex;
+      gap: 10px;
+      margin: 15px 0px;
+    }
+    label {
+      display: block;
+      margin: 10px 0px;
+      color: white;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <form action="index.php" method="POST" autocomplete="on">
+      <fieldset>
+        <legend>Preencher seus dados pessoais</legend>
+        
+        <label for="iname">Nome:</label>
+        <input type="text" name="name" id="iname" autocomplete="name" required >
+        
+        <label for="iemail">Email:</label>
+        <input type="email" name="email" id="iemail" autocomplete="email" required >
+        
+        <label for="inumero">Número de telefone</label>
+        <input type="tel" name="numero" id="inumero" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(xx) xxxxx-xxxx" requerd>
+        
+        <div class="button">
+          <input type="submit" value="Entrar">
+          <input type="reset" value="Limpar">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
