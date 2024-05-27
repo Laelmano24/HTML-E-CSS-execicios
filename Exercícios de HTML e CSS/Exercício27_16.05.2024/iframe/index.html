@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iframe passa</title>
+  <style>
+    body {
+      background-color: orange;
+    }
+    main {
+      margin: 0 auto;
+    }
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 0px auto;
+      max-width: 800px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    section > p {
+      text-align: justify;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h2>Iframe normal:</h2>
+      <iframe></iframe>
+      <p>☝️Isso é um tag de iframe (puro) no html</p>
+      <h2>Iframe com alguns elementos:</h2>
+      <iframe src="" frameborder="0"></iframe>
+      <p>Não parece que tem um Iframe aqui, porém tem sim, ele não aparcer porque existi um elemento chamado: <strong>"frameborder"</strong> que tira a borda do iframe.</p>
+      <h2>Iframe com o <span style="color: red;">src</span> personalizado.</h2>
+      <iframe src="https://israel-eduardo.vercel.app/" frameborder="0"></iframe>
+      <p>Eu só peguei o <span style="color: red;">src</span> e coloquei uma url.</p>
+      <h2>Colocando uma configuração no nosso iframe (frameborder 0).</h2>
+      <h3>Tamanho personalizado:</h3>
+      <iframe src="https://israel-eduardo.vercel.app/" frameborder="0" height="500" width="94%">https://israel-eduardo.vercel.app/</iframe>
+      <p>Adcionei:</p>
+      <ul>
+        <li>height de 500</li>
+        <li>width com porcentagem (para responsividade)</li>
+        <li>Frameborder "0"</li>
+        <li>scolling auto</li>
+      </ul>
+      <iframe src="https://israel-eduardo.vercel.app/" frameborder="1" height="500" width="94%">https://israel-eduardo.vercel.app/</iframe>
+      <p>Adcionei:</p>
+      <ul>
+        <li>height de 500</li>
+        <li>width com porcentagem (para responsividade)</li>
+        <li>Frameborder "1"</li>
+        <li>scolling auto</li>
+    </section>
+  </main>
+</body>
+</html>
