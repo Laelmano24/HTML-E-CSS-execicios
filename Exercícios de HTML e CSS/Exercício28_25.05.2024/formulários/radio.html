@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radio e checkedbox</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+      background: linear-gradient(120deg, #292929, #3C3C3C);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    div {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0px 0px 10px #FFFFFF;
+    }
+    #button {
+      display: block;
+      margin: 15px 0px;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 3px;
+      color: white;
+      font-weight: bolder;
+      background-color: #25E577;
+      transition: 0.5s;
+    }
+    #button:hover {
+      background-color: #1ACB66;
+      transform: scale(1.05)
+    }
+    .pg2 {
+      display: none;
+    }
+    img {
+      display: block;
+      margin: 0px auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="pg1">
+    <h2>Gênero:</h2>
+    <form action="" method="POST">
+      <input type="radio" name="genero" id="hetero">
+      <label for="hetero">Hetero</label><br>
+      <input type="radio" name="genero" id="homossexual">
+      <label for="homossexual">Homossexual</label><br>
+      <input type="radio" name="genero" id="bisexual">
+      <label for="bisexual">Bisexual</label>
+      <input type="button" value="Verificação" id="button">
+  </form>
+  </div>
+  <div class="pg2">
+    
+  </div>
+<script>
+  let pg1 = document.querySelector(".pg1")
+  let pg2 = document.querySelector(".pg2")
+  let btn = document.getElementById("button")
+  let generos = [document.getElementById("hetero"), document.getElementById("homossexual"), document.getElementById("bisexual")]
+  
+  
+  btn.addEventListener("click", clicar)
+  
+  function clicar() {
+    
+    let h2 = document.createElement("h2")
+    let img = document.createElement("img")
+    
+    pg2.appendChild(h2)
+    pg2.appendChild(img)
+    
+    if (generos[0].checked) {
+      pg1.style.display = "none"
+      pg2.style.display = "block"
+      
+      h2.innerHTML = "Te fode"
+      h2.style.textAlign = "center"
+      img.setAttribute("src", "image/blz.png")
+    } else if (generos[1].checked) {
+      pg1.style.display = "none"
+      pg2.style.display = "block"
+      
+      img.setAttribute("src", "image/image-legal.jpeg")
+    } else if (generos[2].checked) {
+      pg1.style.display = "none"
+      pg2.style.display = "block"
+      
+      img.setAttribute("src", "image/image-legal.jpeg")
+    }
+  }
+</script>
+</body>
+</html>
