@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Range</title>
+  <style>
+    body {
+      height: 100vh;
+      position: relative;
+      background-image: linear-gradient(120deg, #3ECD4F, #2B8E37);
+    }
+    main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    fieldset {
+      display: flex;
+      
+      align-items: center;
+    }
+    #btn {
+      margin: 15px 0px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <form action="index.php" method="get">
+      
+      <fieldset>
+        <legend>Informe a idade</legend>
+        
+        <label for="idade">Idade:</label>
+        <input type="range" name="idade" id="idade" max="20" min="1" /><span id="sla">0</span>
+      </fieldset>
+      
+      <input type="submit" value="verificar" id="btn">
+    </form>
+  </main>
+<script>
+  let input = document.getElementById("idade");
+  
+  let sla = document.getElementById("sla");
+
+  sla.innerHTML = input.value;
+
+  input.addEventListener("input", function() {
+    sla.innerHTML = input.value;
+  });
+  
+</script>
+</body>
+</html>
