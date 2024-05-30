@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Input file</title>
+  <style>
+    body {
+      background: url("https://i.postimg.cc/4376hBxW/images-15.jpg") no-repeat center/cover fixed;
+      height: 100vh;
+      margin: 0px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    main, .container_res {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 300px;
+    }
+    label {
+      display: block;
+      margin: 15px 0px;
+      
+    }
+    input {
+      margin: 5px 0px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Vamos colocar alguns arquivos :D</h2>
+    <form action="index.php" method="POST">
+      <label for="arquivos">arquivos:</label>
+      <input type="file" name="arquivo" id="arquivos" />
+      <input type="button" value="Enviar" id="btn">
+      
+    </form>
+  </main>
+<script src="main.js"></script>
+</body>
+</html>
