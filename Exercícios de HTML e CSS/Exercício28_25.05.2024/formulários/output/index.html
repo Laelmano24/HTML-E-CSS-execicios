@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Output formulario</title>
+</head>
+<body>
+  <main>
+    <h1>calculadora de soma</h1>
+    <label for="INum1">Numero 1:</label>
+    <input type="number" name="Num1" id="INum1" max="10" min="1"
+   required oninput="Isoma.innerHTML = Number(INum1.value) + Number(INum2.value)">
+    <br>
+    <label for="INum2">Numero 2:</label>
+    <input type="number" name="Num2" id="INum2"  max="10" min="1" required oninput="Isoma.innerHTML = Number(INum1.value) + Number(INum2.value)">
+    <br>
+    <label for="Isoma">Soma:</label>
+    <output id="Isoma" >0</output>
+  </main>
+</body>
+</html>

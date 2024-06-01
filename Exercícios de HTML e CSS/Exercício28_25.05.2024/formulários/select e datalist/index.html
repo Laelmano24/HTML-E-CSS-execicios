@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select e Datelist</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+      background: url("https://i.postimg.cc/4376hBxW/images-15.jpg") no-repeat center/cover fixed;
+      
+    }
+    main {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 300px;
+    }
+    select {
+      padding: 5px;
+      border-radius: 3px;
+    }
+    label {
+      display: block;
+      margin: 15px 0px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <fieldset>
+      <legend>Escolher frutas</legend>
+      <form action="index.php" method="POST">
+        <label for="ifruit">Escolha uma fruta:</label><br>
+        <select name="fruit" id="ifruit">
+          <option value="Escolher" selected >--Escolher--</option>
+          <option value="MÇ">Marçã</option>
+          <option value="BN">Banana</option>
+          <option value="ML">Melancia</option>
+        </select>
+        <label for="adc">Adicione uma fruta:</label>
+        <input type="text" name="adc" id="iadc" list="adicionar">
+        <datalist id="adicionar">
+          <option>Laranja</option>
+          <option >Melão</option>
+          <option>Cebola🤓</option>
+        </datalist>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" name="limpar" id="ilimpar" value="Limpar" />
+        <label for="cmt">Quer adicionar um comentario?</label>
+        <textarea name="cometario" id="icmt" cols="30" rows="10"></textarea>
+      </form>
+    </fieldset>
+    
+  </main>
+<script>
+  
+</script>
+</body>
+</html>
