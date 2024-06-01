@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+      background: url("https://i.postimg.cc/4376hBxW/images-15.jpg") no-repeat center/cover fixed;
+      
+    }
+    .container {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      height: 200px;
+      transition: 0.5s;
+      
+    }
+    .container:hover {
+      transform: translate(0px, -20px);
+    }
+    .container-button {
+      margin: 15px 0px;
+    }
+    .container-button > input {
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bolder;
+      background-color: #323232;
+      border-radius: 3px;
+      transition: 0.5s;
+    }
+    .container-button > input:hover {
+      transform: scale(1.1);
+      background-color: #181818;
+    }    
+  </style>
+</head>
+<body>
+  <main class="container">
+    <form action="">
+      <fieldset>
+        <legend>Preencha seus dados para baixar o shake</legend>
+        <div class="container-input">
+          <label for="Iname">Nome:</label>
+          <input type="text" name="name" id="Iname" maxlength="10" min="5" required size="10" placeholder="Coloque seu usuario"/>
+        </div>
+        <div class="container-input">
+          <label for="Isenha">Senha:</label>
+          <input type="password" name="senha" id="Isenha" required minlength="8" maxlength="15" size="10" placeholder="Coloque sua senha">
+        </div>
+        <div class="container-button">
+          <input type="button" id="button" value="Entrar">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+<script>
+  const input1 = document.getElementById("Iname")
+  const input2 = document.getElementById("Isenha")
+  const btn = document.getElementById("button")
+  
+  btn.addEventListener("click", login)
+  
+  function login() {
+    let inpt1 = input1.value
+    let inpt2 = input2.value
+  
+    if (inpt1.length === 0 && inpt2.length === 0) {
+      window.alert("Preencha alguma coisa")
+      
+    } else if (inpt1 === "Laelmano24" && inpt2 === "lael24") {
+      window.location.href = ("https://drive.google.com/file/d/17WRku09cTCeaIzI8S_D41LDgjKqaZuBk/view")
+    }
+  }
+</script>  
+</body>
+</html>
