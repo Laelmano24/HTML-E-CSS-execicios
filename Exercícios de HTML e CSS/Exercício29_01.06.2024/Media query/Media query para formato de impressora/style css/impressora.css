@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* Estilo para impressora */
+
+header {
+  display: none;
+}
+menu {
+  display: none;
+}

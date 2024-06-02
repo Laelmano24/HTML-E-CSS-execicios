@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* Estilo para todos os dispositivo */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: gray;
+ 
+}
+p {
+  margin: 15px 0px;
+}
+header > h1 {
+  color: deepskyblue;
+  text-shadow: 0px 0px 10px skyblue;
+  font-style: italic;
+  padding: 10px;
+   
+}
+
+header > nav > ol {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+header > nav > ol > li {
+  color: white;
+  padding: 10px 20px;
+  font-weight: bolder;
+  transition: 0.5s
+}
+header > nav > ol > li:hover {
+  background: dimgray;
+}
+
+article {
+  margin: 15px 5px;
+}
+footer {
+  background: gray;
+  padding: 1%
+}
+footer > p {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
