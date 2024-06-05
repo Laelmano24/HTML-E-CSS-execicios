@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background: #1CD9A5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #fff;
+  
+}
+@media screen and (orientation: portrait) {
+  body {
+    background: #1CA3D9;
+  }
+  h1::after {
+    content: " retrato"
+  }
+}
+@media screen and (orientation: landscape) {
+
+  body {
+    background: #D2D91C;
+  }
+  h1::after {
+    content: " paisagem";
+  }
+  
+}
