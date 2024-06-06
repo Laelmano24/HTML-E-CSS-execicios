@@ -30,12 +30,12 @@
 @media screen and (min-width: 1200px) {
 
     body {
-        background-image: url("../imagens/back-pc.jpg");
+        background-image: url("../imagens/back-tv.jpg");
     }
     main {
         height: 80vh;
     }
-    #computador {
+    #tv {
         display: block;
     }
     #celular {
