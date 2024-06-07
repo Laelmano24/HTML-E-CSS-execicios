@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu responsivo</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Menu responsivo</h1>
+    <span id="burguer"  class="material-icons">menu</span>
+    <menu
+    class="menu-container">
+      <ul>
+        <li>opção 1</li>
+        <li>opção 2</li>
+        <li>opção 3</li>
+        <li>opção 4</li>
+        <li>opção 5</li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <section>
+      <h1>Responsividade de sites</h1>
+      <p>A responsividade em design web é fundamental para garantir que um site funcione bem em diferentes dispositivos e tamanhos de tela, como computadores, tablets e smartphones. Aqui estão os principais conceitos sobre responsividade:</p>
+      <ol>
+        <li>Grid System e Layout Flexível: Utiliza grades flexíveis que se ajustam proporcionalmente ao tamanho da tela, em vez de usar unidades fixas como pixels. Isso garante que o layout do site se adapte automaticamente ao tamanho do dispositivo.</li>
+        <li>Media Queries: São regras CSS que permitem aplicar estilos específicos com base nas características da tela, como largura, altura e resolução. Elas ajudam a adaptar o layout do site de acordo com diferentes tamanhos de tela, proporcionando uma experiência de usuário otimizada</li>
+        <li>Imagens Responsivas: Utilizam técnicas como max-width: 100% para garantir que as imagens se ajustem ao tamanho da tela sem distorções. Além disso, o uso do atributo srcset permite carregar diferentes tamanhos de imagens dependendo da largura da tela, melhorando o tempo de carregamento</li>  
+        <li>Flexbox: Um módulo CSS que ajuda a criar layouts mais dinâmicos e flexíveis. Ele permite que os elementos dentro de um contêiner se expandam ou se contraiam para preencher o espaço disponível, melhorando a disposição dos elementos na tela</li>
+        <li>Conteúdo Condicional e Navegação Adaptativa: Permitem mostrar ou esconder partes do conteúdo dependendo do tamanho da tela, e adaptar a navegação para ser mais eficiente em dispositivos móveis</li>
+        <li>Importância para SEO e Acessibilidade: Sites responsivos melhoram a experiência do usuário e são favorecidos por motores de busca como o Google, que priorizam a indexação de versões móveis das páginas. Além disso, eles garantem que usuários com diferentes necessidades possam acessar e utilizar o site de forma eficaz </li>
+      </ol>
+    </section>
+  </main>
+<script>
+  const button_burguer = document.getElementById("burguer")
+  const menu_container = document.querySelector(".menu-container")
+  const header = document.querySelector("header")
+  
+  
+  button_burguer.addEventListener("click", mostrar)
+  
+  function mostrar() {
+    if (menu_container.style.display === "block") {
+      
+      menu_container.style.display = "none"
+      header.style.height = "12.5vh"
+      
+    } else {
+      menu_container.style.display = "block"
+      header.style.height = "38vh"
+    }
+  }
+</script>
+</body>
+</html>
