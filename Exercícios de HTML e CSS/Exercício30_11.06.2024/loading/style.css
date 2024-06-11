@@ -1,0 +1,28 @@
+@keyframes rodar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  border: 7px solid #C4C4C4;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation-name: rodar;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

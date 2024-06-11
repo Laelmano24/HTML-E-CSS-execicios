@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.circle {
+  background-color: #1AD93C;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-name: animacao;
+  animation-duration: 2s;
+  
+}
+
+
+@keyframes animacao {
+  0% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 10%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
