@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aumentar animation</title>
+  <style>
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes aumentar {
+      0% {
+        transform: scale(1);
+        
+      }
+      50% {
+        transform: scale(1.15);
+      }
+      100% {
+        transform: scale(1);
+        
+      }
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+    }
+    .box {
+      height: 130px;
+      width: 130px;
+      background: #37E4C6;
+      animation-name: fadein;
+      animation-duration: 2s;
+      
+      
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    
+  </div>
+</body>
+</html>

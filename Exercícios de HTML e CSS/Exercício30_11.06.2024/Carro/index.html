@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrinho</title>
+  <style>
+    @keyframes girar {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+    }
+    .carro-container {
+      position: relative;
+      background: gray;
+      height: 100px;
+      width: 250px;
+    }
+    .carro-container > .carro-corpo > img {
+      height: 100px;
+      width: 250px;
+    }
+    img {
+      width: 80px;
+    }
+    .carro-roda-1, .carro-roda-2 {
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      top: 0;
+      animation-name: girar;
+      animation-duration: 0.4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .carro-roda-1 {
+      left: -15px;
+      top: 65px;
+    }
+    .carro-roda-2 {
+      right: -15px;
+      top: 65px;
+    }
+  </style>
+</head>
+<body>
+  <div class="carro-container">
+    <div class="carro-corpo">
+      <img src="carro_corpo.png" alt="carro corpo">
+    </div>
+    <div class="carro-roda-1">
+      <img src="roda.png" alt="roda 1">
+    </div>
+    <div class="carro-roda-2">
+      <img src="roda.png" alt="roda 2">
+    </div>
+  </div>
+</body>
+</html>
