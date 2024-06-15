@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fly drone</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+    }
+    .drone {
+      animation-name: voar;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-fill-mode: forwards;
+      
+    }
+    @keyframes voar {
+      0% {
+        transform: translate(0px, 0px);
+      }
+      50% {
+        transform: translate(0px, 100px);
+      }
+      75% {
+        transform: translate(0px, -100px);
+      }
+      100% {
+        transform: translate(0px, 0px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="drone">
+    <img src="drone.png" alt="Drone">
+  </div>
+</body>
+</html>
